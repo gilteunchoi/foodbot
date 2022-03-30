@@ -1,0 +1,22 @@
+{
+  "name": "foodbot",
+  "version": "1.0.0",
+  "description": "insta-alarm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilteunchoi/foodbot.git"
+  },
+  "author": "Gilteun Choi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gilteunchoi/foodbot/issues"
+  },
+  "homepage": "https://github.com/gilteunchoi/foodbot#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0"
+  }
+}
