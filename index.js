@@ -2,6 +2,15 @@ const Discord = require("discord.js");
 const config = require("./config.json");
 const prefix = '!';
 
+const helptext = `\`\`\`실시간예약봇 | 맛집 예약을 위한 실시간 인스타 크롤러 1.0.0-alpha
+
+[명령어 목록]
+!ping - Test
+!text - text
+
+[주시중인 맛집 목록]
+test\`\`\``
+
 const client = new Discord.Client({
     intents: [
         Discord.Intents.FLAGS.GUILDS,
@@ -10,13 +19,19 @@ const client = new Discord.Client({
 });
 
 client.on('ready', () => {
-    console.log("Hello!")
+    client.user.setActivity("1.0.0-alpha"); 
+    console.log("1.0.0-alpha")
 });
 
 client.on('messageCreate', (message) => {
     if (message.content === prefix + 'ping'){
         message.reply({
             content: 'pong',
+        })
+    }
+    if (message.content === prefix + 'help'){
+        message.reply({
+            content: helptext,
         })
     }
 });
